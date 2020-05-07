@@ -40,3 +40,9 @@ then
 else
         echo "invalid password"
 fi
+
+echo "First name is > " $fname
+echo "Last name is > " $lname
+echo "email id is > " $email
+echo "phone number is > " $pno
+echo "password is > " $passwd
