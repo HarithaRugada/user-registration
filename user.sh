@@ -34,7 +34,7 @@ else
         echo "invalid phone number"
 fi
 
-if [[ ${#passwd} -gt 8 ]]
+if [[ ${#passwd} -gt 8 && $passwd =~ [[:upper:]] ]]
 then
         echo "valid password"
 else
