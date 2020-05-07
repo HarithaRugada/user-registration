@@ -4,6 +4,7 @@ read -p "enter the first name > " fname
 read -p "enter the last name > " lname
 read -p "enter the email address > " email
 read -p "enter the phone number > " pno
+read -p "enter the password > " passwd
 
 if [[ $fname =~ ^([[:upper:]][[:lower:]]{2,})$ ]]
 then
@@ -33,3 +34,9 @@ else
         echo "invalid phone number"
 fi
 
+if [[ ${#passwd} -gt 8 ]]
+then
+        echo "valid password"
+else
+        echo "invalid password"
+fi
